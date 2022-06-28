@@ -25,12 +25,10 @@ function playRound (playerSelection, computerSelection) {
 }
 
 function game () {
-    for (let i = 0; i < 5; i++){
-        let playerSelection = prompt("Choose!", computerPlay());
-        let computerSelection = computerPlay();
-        console.log(computerSelection);
-        console.log(playRound(playerSelection, computerSelection));
-    }
+    let playerSelection = prompt("Choose!", computerPlay());
+    let computerSelection = computerPlay();
+    console.log(computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
 }
 
 game();
