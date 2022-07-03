@@ -1,5 +1,5 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto+Mono:wght@200&display=swap');
 
 h1 {
-
+    font-family: 'Roboto Mono', monospace;
 }
