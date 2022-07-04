@@ -24,13 +24,6 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-function game () {
-    let playerSelection = prompt("Choose!", computerPlay());
-    let computerSelection = computerPlay();
-    console.log(computerSelection);
-    console.log(playRound(playerSelection, computerSelection));
-}
-
 const results = document.querySelector(".results");
 const score = document.querySelector("#score");
 const para = document.createElement("p");
