@@ -31,4 +31,41 @@ function game () {
     console.log(playRound(playerSelection, computerSelection));
 }
 
-game();
+const div = document.createElement("div");
+
+/*
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach( (button) => {
+    button.addEventListener("click", () => {
+        alert(button.id);
+        //console.log(e);
+        //let computerSelection = computerPlay();
+        //let playerSelection = button.id;
+        //console.log(playRound(playerSelection, computerSelection));
+    });
+});
+*/
+
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors")
+
+rock.addEventListener("click", () => {
+    let playerSelection = rock.id;
+    let computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+});
+
+paper.addEventListener("click", () => {
+    let playerSelection = paper.id;
+    let computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+});
+
+scissors.addEventListener("click", () => {
+    let playerSelection = scissors.id;
+    let computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+});
+
