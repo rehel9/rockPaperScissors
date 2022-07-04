@@ -31,8 +31,9 @@ function game () {
     console.log(playRound(playerSelection, computerSelection));
 }
 
-const div = document.createElement("div");
-
+const results = document.querySelector(".results");
+const score = document.querySelector("#score");
+const para = document.createElement("p");
 /*
 const buttons = document.querySelectorAll("button");
 
@@ -51,21 +52,26 @@ const rock = document.querySelector("#rock");
 const paper = document.querySelector("#paper");
 const scissors = document.querySelector("#scissors")
 
+
 rock.addEventListener("click", () => {
     let playerSelection = rock.id;
     let computerSelection = computerPlay();
-    console.log(playRound(playerSelection, computerSelection));
+    para.textContent = playRound(playerSelection, computerSelection);
+    results.appendChild(para);
 });
 
 paper.addEventListener("click", () => {
     let playerSelection = paper.id;
     let computerSelection = computerPlay();
-    console.log(playRound(playerSelection, computerSelection));
+    para.textContent = playRound(playerSelection, computerSelection);
+    results.appendChild(para);    
 });
 
 scissors.addEventListener("click", () => {
     let playerSelection = scissors.id;
     let computerSelection = computerPlay();
-    console.log(playRound(playerSelection, computerSelection));
+    console.log(playRound(playerSelection, computerSelection));    
+    para.textContent = playRound(playerSelection, computerSelection);
+    results.appendChild(para);
 });
 
