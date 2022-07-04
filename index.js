@@ -32,11 +32,9 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach( (button) => {
     button.addEventListener("click", () => {
-        alert(button.id);
-        //console.log(e);
-        //let computerSelection = computerPlay();
-        //let playerSelection = button.id;
-        //console.log(playRound(playerSelection, computerSelection));
+        computerSelection = computerPlay();
+        playerSelection = button.id;
+        console.log(playRound(playerSelection, computerSelection));
     });
 });
 */
